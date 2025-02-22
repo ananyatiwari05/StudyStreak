@@ -1,0 +1,52 @@
+.calendar{
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+button{
+    border-radius: 20px;
+    width:40px;
+    margin:10px;
+}
+.cal-nav{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(219, 74, 74);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+#curr-month{
+    width:50%;
+    font-size:xx-large;
+    text-align: center;
+}
+.week{
+    /* margin-top: 20px;
+    padding-top: 40px; */
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    background-color: rgb(219, 74, 74);
+    font-size: x-large;
+}
+.calendar-dates{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: rgb(245, 245, 229);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    font-size: x-large;
+    border-bottom: dotted black;
+}
+.calendar-dates div{
+    display:flex;
+    justify-content: center;
+    height:100px;
+    align-items: center;
+    text-align: center;
+}
+.empty-day{
+    background-color: rgb(245, 245, 229);
+}
