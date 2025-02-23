@@ -1,52 +1,69 @@
 .calendar{
-    padding-top: 50px;
+    margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
+    box-shadow: 10px 10px 7px rgb(62, 62, 62);
+    border:2px solid black;
+    border-radius: 40px;
 }
 button{
     border-radius: 20px;
     width:40px;
     margin:10px;
+    background-color:white;
 }
 .cal-nav{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(219, 74, 74);
+    background-color: #D84040;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
 #curr-month{
     width:50%;
-    font-size:xx-large;
+    font-size:2.5rem;
     text-align: center;
+    font-family:'Times New Roman', Times, serif;
 }
 .week{
-    /* margin-top: 20px;
-    padding-top: 40px; */
     display:flex;
     justify-content: space-around;
     padding-bottom: 20px;
-    background-color: rgb(219, 74, 74);
-    font-size: x-large;
+    background-color: #D84040;
+    font-size: 1.5rem;
+    border-bottom: solid 2px black;
+    font-family:'Times New Roman', Times, serif;
 }
 .calendar-dates{
     display:grid;
     grid-template-columns: repeat(7,1fr);
-    background-color: rgb(245, 245, 229);
+    background-color: #F8F2DE;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
-    font-size: x-large;
-    border-bottom: dotted black;
+    font-size: 2rem;
+    height: 70vh;
+    font-family:'Times New Roman', Times, serif;
+}
+.dropdown-menu{
+    display:none;
+    /* height: 10vh; */
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+.cal-dates{
+    
 }
 .calendar-dates div{
     display:flex;
     justify-content: center;
-    height:100px;
+    height:10vh;
     align-items: center;
     text-align: center;
+    cursor:pointer;
 }
 .empty-day{
-    background-color: rgb(245, 245, 229);
+    background-color: #F8F2DE;
 }
